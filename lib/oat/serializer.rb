@@ -1,8 +1,5 @@
-require 'support/class_attribute'
-
 module Oat
   class Serializer
-    extend ClassAttribute
     class_attribute :_adapter, :logger, :schemas, :schema_methods
 
     self.schemas = []
